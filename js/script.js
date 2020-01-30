@@ -1,6 +1,7 @@
 $(document).ready(function(){
     console.log('ready');
     $(".search_filters input, .search_filters select").styler();
+    $(".input_begin_date input").datepicker("setDate",null);
     $(".input_begin_date input").datepicker({
         dateFormat: 'dd.mm.yy',
         minDate: new Date( 2016, 4, 1 ),
