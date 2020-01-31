@@ -1,7 +1,7 @@
 $(document).ready(function(){
     console.log('ready');
-    $(".search_filters input, .search_filters select").styler();
-    $(".input_begin_date input").datepicker("setDate",null);
+    $(".search_filters input, .search_filters select, .main_list_sortby select").styler();
+    //$(".input_begin_date input").datepicker("setDate",null);
     $(".input_begin_date input").datepicker({
         dateFormat: 'dd.mm.yy',
         minDate: new Date( 2016, 4, 1 ),
@@ -15,6 +15,10 @@ $(document).ready(function(){
         onClose: function() {
 
         }
+    });
+    $(".input_begin_date[after]").click(function(){
+        console.log('asd');
+       //$('.input_begin_date input').trigger('click');
     });
     $(".selected_country").click(function(){
         if($(".left_sidebar .country_list").hasClass('country_list_showed')){
