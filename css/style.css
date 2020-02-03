@@ -877,7 +877,7 @@ input::placeholder {
 }
 .owl-prev,
 .owl-next {
-    top: 15px;
+    top: 10px;
     width: 10px;
     height: 20px;
     position: absolute;
@@ -891,9 +891,15 @@ input::placeholder {
     left: 10px;
     background: transparent url(../img/left_arrow.png) 0 0 no-repeat;
 }
+.owl-prev:hover {
+    background: transparent url(../img/left_arrow_hover.png) 0 0 no-repeat;
+}
 .owl-next {
     right: 10px;
     background: transparent url(../img/right_arrow.png) 0 0 no-repeat;
+}
+.owl-next:hover {
+    background: transparent url(../img/right_arrow_hover.png) 0 0 no-repeat;
 }
 .owl-stage-outer {
     overflow: hidden;
