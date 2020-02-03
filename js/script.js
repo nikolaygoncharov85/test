@@ -4,7 +4,7 @@ $(document).ready(function(){
     //$(".input_begin_date input").datepicker("setDate",null);
     $(".input_begin_date input").datepicker({
         dateFormat: 'dd.mm.yy',
-        minDate: new Date( 2016, 4, 1 ),
+        minDate: new Date( 2019, 1, 1 ),
         autoclose: false,
         beforeShow: function () {
 
@@ -41,4 +41,7 @@ $(document).ready(function(){
             $(this).parent().find('ul').slideDown();
         }
     });
+    $(".slider").owlCarousel({
+        items : 5,
+    })
 });
